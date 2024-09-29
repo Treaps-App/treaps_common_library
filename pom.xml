@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.treaps</groupId>
 	<artifactId>commonService</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>commonService</name>
 	<description>common service with following servicescom.treaps.common ├── models        // All shared models like Address, Phone number, etc. ├── auth          // JWT token handling, authentication-related utilities ├── logging       // Logging utilities, structured logging ├── error         // Exception classes and error handling utilities ├── config        // Common configuration utilities ├── messaging     // Kafka/RabbitMQ utilities └── security      // Security utilities (e.g., role-based access checks, password hashing)</description>
 	<url/>
