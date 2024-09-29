@@ -1,4 +1,4 @@
-package com.treaps.commonService.modals;
+package com.treaps.common.models;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;

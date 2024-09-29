@@ -1,4 +1,4 @@
-package com.treaps.commonService.modals;
+package com.treaps.common.models;
 
 
 import jakarta.validation.constraints.NotBlank;
@@ -13,8 +13,8 @@ import lombok.NoArgsConstructor;
 public class Address {
     private String addressLine1;
 
-    @NotBlank(message = "Address name is mandatory")
-    private String addressLine2;
+    @NotBlank(message = "Normalized Address is mandatory")
+    private String normalizedAddress;
 
     @NotNull(message = "Latitude is mandatory")
     private Double latitude;

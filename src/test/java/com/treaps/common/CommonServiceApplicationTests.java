@@ -1,4 +1,4 @@
-package com.treaps.commonService;
+package com.treaps.common;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

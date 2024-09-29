@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.treaps</groupId>
-	<artifactId>commonService</artifactId>
+	<artifactId>common</artifactId>
 	<version>1.0.0</version>
-	<name>commonService</name>
-	<description>common service with following servicescom.treaps.common ├── models        // All shared models like Address, Phone number, etc. ├── auth          // JWT token handling, authentication-related utilities ├── logging       // Logging utilities, structured logging ├── error         // Exception classes and error handling utilities ├── config        // Common configuration utilities ├── messaging     // Kafka/RabbitMQ utilities └── security      // Security utilities (e.g., role-based access checks, password hashing)</description>
+	<name>common</name>
+	<description>common library with following com.treaps.common ├── models        // All shared models like Address, Phone number, etc. ├── auth          // JWT token handling, authentication-related utilities ├── logging       // Logging utilities, structured logging ├── error         // Exception classes and error handling utilities ├── config        // Common configuration utilities ├── messaging     // Kafka/RabbitMQ utilities └── security      // Security utilities (e.g., role-based access checks, password hashing)</description>
 	<url/>
 	<licenses>
 		<license/>

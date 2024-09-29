@@ -1,4 +1,4 @@
-package com.treaps.commonService.auth;
+package com.treaps.common.auth;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;

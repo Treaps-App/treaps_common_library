@@ -1,4 +1,4 @@
-package com.treaps.commonService.errorHandling.exception;
+package com.treaps.common.errorHandling.exception;
 
 public class ResourceNotFoundException extends RuntimeException {
     public ResourceNotFoundException(String message) {

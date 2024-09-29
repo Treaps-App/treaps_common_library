@@ -1,4 +1,4 @@
-package com.treaps.commonService.auth;
+package com.treaps.common.auth;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;

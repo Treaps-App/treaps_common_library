@@ -1,4 +1,4 @@
-package com.treaps.commonService.errorHandling.exception;
+package com.treaps.common.errorHandling.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
