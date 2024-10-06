@@ -12,7 +12,7 @@ import java.util.Date;
 public class JwtService {
 
     @Autowired
-    private JwtProperties jwtProperties;
+    protected JwtProperties jwtProperties;
 
     // Validate the JWT token
     public boolean validateToken(String token, String phoneNumber) {

@@ -6,11 +6,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-    @NoArgsConstructor
-    @AllArgsConstructor
-    public class PhoneNumber {
-        @NotBlank(message = "Country code is mandatory")
-        private String countryCode;
+@NoArgsConstructor
+@AllArgsConstructor
+public class PhoneNumber {
+    @NotBlank(message = "Country code is mandatory")
+    private String countryCode;
 
-        private String number;
-    }
+    private String number;
+}

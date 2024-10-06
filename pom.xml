@@ -12,7 +12,7 @@
 
 	<groupId>com.treaps</groupId>
 	<artifactId>common</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.4</version>
 	<packaging>jar</packaging>
 	<name>common</name>
 	<description>common library with shared utilities and models</description>
