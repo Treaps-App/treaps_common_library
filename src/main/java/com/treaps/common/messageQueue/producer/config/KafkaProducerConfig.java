@@ -22,7 +22,7 @@ public class KafkaProducerConfig {
     private String clientId;
 
     // Load key and value serializers from the config, defaulting to StringSerializer for key and JsonSerializer for value
-    @Value("${kafka.key-serializer:org.apache.kafka.common.serialization.JsonSerializer}")
+    @Value("${kafka.key-serializer:org.apache.kafka.common.serialization.StringSerializer}")
     private String keySerializer;
 
     @Value("${kafka.value-serializer:org.springframework.kafka.support.serializer.JsonSerializer}")
