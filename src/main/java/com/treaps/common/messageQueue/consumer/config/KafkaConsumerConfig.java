@@ -9,7 +9,6 @@ import org.springframework.kafka.annotation.EnableKafka;
 import org.springframework.kafka.config.ConcurrentKafkaListenerContainerFactory;
 import org.springframework.kafka.core.ConsumerFactory;
 import org.springframework.kafka.core.DefaultKafkaConsumerFactory;
-import org.springframework.kafka.support.serializer.ErrorHandlingDeserializer;
 import org.springframework.kafka.support.serializer.JsonDeserializer;
 
 import java.util.HashMap;
@@ -19,16 +18,17 @@ import java.util.Map;
 @Configuration
 public class KafkaConsumerConfig {
 
-    @Value("${kafka.bootstrap-servers}")
+    @Value("${kafka.bootstrap-servers:bootstrap-server-test}")
     private String bootstrapServers;
 
-    @Value("${kafka.consumer.group-id}")
+    //TODO: Make it dynamic
+    @Value("${kafka.consumer.group-id:consumer-group-test}")
     private String groupId;
 
-    @Value("${kafka.consumer.key-deserializer}")
+    @Value("${kafka.consumer.key-deserializer:org.apache.kafka.common.serialization.StringSerializer}")
     private String keyDeserializer;
 
-    @Value("${kafka.consumer.value-deserializer}")
+    @Value("${kafka.consumer.value-deserializer:org.springframework.kafka.support.serializer.JsonSerializer}")
     private String valueDeserializer;
 
     @Bean
