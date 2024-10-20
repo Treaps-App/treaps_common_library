@@ -1,7 +1,6 @@
 package com.treaps.common.messageQueue.producer.config;
 
 import org.apache.kafka.clients.producer.ProducerConfig;
-import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -15,10 +14,10 @@ import java.util.Map;
 @Configuration
 public class KafkaProducerConfig {
 
-    @Value("${kafka.bootstrap-servers}")
+    @Value("${kafka.bootstrap-servers:bootstrap-server-test}")
     private String bootstrapServers;
 
-    @Value("${kafka.client-id}")
+    @Value("${kafka.client-id:client-id-test}")
     private String clientId;
 
     // Load key and value serializers from the config, defaulting to StringSerializer for key and JsonSerializer for value
