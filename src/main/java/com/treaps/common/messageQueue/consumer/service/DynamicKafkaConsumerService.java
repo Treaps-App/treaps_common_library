@@ -2,7 +2,8 @@ package com.treaps.common.messageQueue.consumer.service;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.treaps.common.errorHandling.exception.MessageProcessorNotFoundException;
+import com.treaps.common.errorHandling.exception.commonCustomException.MessageProcessorNotFoundException;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

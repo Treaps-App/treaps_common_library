@@ -1,6 +1,6 @@
 package com.treaps.common.auth;
 
-import com.treaps.common.errorHandling.exception.ResourceNotFoundException;
+import com.treaps.common.errorHandling.exception.commonCustomException.ResourceNotFoundException;
 import com.treaps.common.models.PhoneNumber;
 import jakarta.validation.ValidationException;
 import org.springframework.security.core.Authentication;

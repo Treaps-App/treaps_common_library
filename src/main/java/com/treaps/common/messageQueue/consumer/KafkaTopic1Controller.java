@@ -1,6 +1,9 @@
 package com.treaps.common.messageQueue.consumer;
 import com.treaps.common.messageQueue.consumer.service.KafkaConsumerService;
 import com.treaps.common.messageQueue.consumer.service.MessageProcessor;
+
+import jakarta.annotation.PostConstruct;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,7 +13,7 @@ public class KafkaTopic1Controller {
     @Autowired
     private KafkaConsumerService<String> kafkaConsumerService;
 
-    public <T> String startKafkaConsumer() {
+    public <T> void startKafkaConsumer() {
         // Start listening to the configured topic and group ID
         kafkaConsumerService.startListening(
             "topic2",
@@ -24,7 +27,6 @@ public class KafkaTopic1Controller {
             },
             String.class
         );
-        return "Kafka Consumer started.";
     }
 
     public String stopKafkaConsumer() {
